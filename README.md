@@ -35,9 +35,9 @@ For a more detailed explanation of choices, refer to Hybrid Microgrid Design and
 
 *ANSI 27/59 (Under/Over Voltage) & ANSI 81 (Under/Over Frequency)*: Positioned near solar and BESS inverters to comply with IEEE standards (1547), preventing component damage from voltage or frequency variations.
 
-*ANSI 25 (Synchronism Check)*: Put on the main utility line to make sure the neighborhood busbar voltages match utility voltages at the point of common coupling (PPC) before rejoining the macrogrid after islanding.
+*ANSI 25 (Synchronism Check)*: Put on the main utility line to make sure the neighborhood busbar voltages match utility voltages at the point of common coupling before rejoining the macrogrid after islanding.
 
-ANSI 67 (Directional Overcurrent)*: Checks directional differences between utility and microgrid sides, especially useful during faults, preventing power backflow
+*ANSI 67 (Directional Overcurrent)*: Checks directional differences between utility and microgrid sides, especially useful during faults, preventing power backflow
 
 # PT & CT Placement:
 PT/CT sets in the utility branch feed voltage/current data to the protective relay for ANSI device function; they are placed next to each other between inverters and the transformer to prevent distorted readings. PTs/CTs are also located between inverters and transformers on the BESS and Solar branches for sensing that can be used for  anti-islanding.

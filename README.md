@@ -27,7 +27,7 @@ For a more detailed explanation of choices, refer to Hybrid Microgrid Design and
 *Circuit Breakers*: Positioned before and after major components to shut down current during component or macrogrid failure to safely island or isolate the microgrid
 
 # ANSI Device Functions:
-*ANSI 50/51 (Instantaneous & Time-Delay Overcurrent)*: Short-circuit and overcurrent protection
+** *ANSI 50/51 (Instantaneous & Time-Delay Overcurrent)* **: Short-circuit and overcurrent protection
 *ANSI 27/59 (Under/Over Voltage) & ANSI 81 (Under/Over Frequency)*: Positioned near solar and BESS inverters to comply with IEEE standards (1547), preventing component damage from voltage or frequency variations.
 *ANSI 25 (Synchronism Check)*: Put on the main utility line to make sure the neighborhood busbar voltages match utility voltages at the point of common coupling (PPC) before rejoining the macrogrid after islanding.
 ANSI 67 (Directional Overcurrent)*: Checks directional differences between utility and microgrid sides, especially useful during faults, preventing power backflow

@@ -23,6 +23,7 @@ For a more detailed explanation of choices, refer to Hybrid Microgrid Design and
 
 # Phase Allocation
 *3-Phase System (Most of Grid/Busbar)*: Provides continuous power with a 120-degree phase shift, yielding ~73% more power while using less conductive material for efficient travel
+
 *1-Phase System (Residential)*: Drops down to single-phase for residential loads, allowing for a safer low voltage with cheaper and smaller  equipment
 
 # Safety & Protective Relaying Architecture

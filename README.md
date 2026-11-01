@@ -61,6 +61,6 @@ Uses IEEE Standards for this design but doesn't focus on controllers or testing
 # Files:
 ## Repository Files
 * `SingleLineDiagramMicrogridModel.pdf` — Single Line Diagram CAD schematic
-* `Hybrid_Microgrid_Design_Rationale.pdf` — Design Report
+* `Hybrid Microgrid Design and Safety Choices_Project overview.pdf` — Design Report
 
  

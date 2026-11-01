@@ -14,8 +14,11 @@ For a more detailed explanation of choices, refer to Hybrid Microgrid Design and
 
 # Voltage Levels
 *13.8kV Utility Tie*: Standard distribution voltage coming into a small neighborhood from the larger macrogrid.
+
 *4.16kV Distribution Bus*: Stepped down from 13.8kV by a 2.5 MVA delta-wye transformer to travel through the neighborhood via busbar, reducing arc flash severity and equipment costs (circuit breakers and switchboxes at higher voltages take up more space and are more expensive)
+
 *480V Generation Branches*: Solar PV and BESS operate at 480V (North American Standard). Because solar panels and batteries output DC voltage, inverters convert DC to AC before step-up transformers bump the voltage up to 4.16kV for the busbar. The BESS uses a bidirectional inverter to convert DC to AC when discharging and AC to DC when storing power.
+
 *120/240V Residential Service*: The residential branch drops the 4.16kV to the 120/240V residential voltage using a one phase split transformer.
 
 # Phase Allocation
@@ -27,20 +30,27 @@ For a more detailed explanation of choices, refer to Hybrid Microgrid Design and
 *Circuit Breakers*: Positioned before and after major components to shut down current during component or macrogrid failure to safely island or isolate the microgrid
 
 # ANSI Device Functions:
-** *ANSI 50/51 (Instantaneous & Time-Delay Overcurrent)* **: Short-circuit and overcurrent protection
+*ANSI 50/51 (Instantaneous & Time-Delay Overcurrent)* : Short-circuit and overcurrent protection
+
 *ANSI 27/59 (Under/Over Voltage) & ANSI 81 (Under/Over Frequency)*: Positioned near solar and BESS inverters to comply with IEEE standards (1547), preventing component damage from voltage or frequency variations.
+
 *ANSI 25 (Synchronism Check)*: Put on the main utility line to make sure the neighborhood busbar voltages match utility voltages at the point of common coupling (PPC) before rejoining the macrogrid after islanding.
+
 ANSI 67 (Directional Overcurrent)*: Checks directional differences between utility and microgrid sides, especially useful during faults, preventing power backflow
 
 # PT & CT Placement:
 PT/CT sets in the utility branch feed voltage/current data to the protective relay for ANSI device function; they are placed next to each other between inverters and the transformer to prevent distorted readings. PTs/CTs are also located between inverters and transformers on the BESS and Solar branches for sensing that can be used for  anti-islanding.
 
 ## Equipment Choices
+
 The equipment table is in the`SingleLineDiagramMicrogridModel.pdf`in the repository.
+
 All equipment adheres to the IEEE standards.
 
 # Important Equipment 
-*Delta-Wye Transformer:* Provides ground fault protection and fault isolation (ground faults on the Wye side cannot pass through Delta) using 3-wire primary runs[cite: 3].
+
+*Delta-Wye Transformer:* Provides ground fault protection and fault isolation (ground faults on the Wye side cannot pass through Delta) using 3-wire primary runs.
+
 *Split Phase Transformer:* Provides two voltage levels through the differing phase angles between the hot and neutral, and the top and bottom wires.
 *Inverters:* Use a 3-phase grid-tied solar inverter and a 4-quadrant bi-directional BESS inverter to allow two-way power flow for battery charging and discharging.
 
